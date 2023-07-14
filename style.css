@@ -1,0 +1,167 @@
+html{
+ width: 100vw;
+ height: 100%;
+}
+
+ body{
+ width: 100%;
+ height: 100%;
+ background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation
+{
+    font-family: 'VT323', monospace;
+    color: wheat;
+    font-size: 30px;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height: 70px;
+}
+.brand img{
+    height: 60px;
+    width: 60px;
+    padding: 8px;
+    
+}
+.navigation ul li
+{
+    padding: 0 15px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    color: rgb(235, 229, 229);
+    font-weight: bolder;
+    font-size:2rem;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 66.5%;
+    border-radius: 13px;
+    padding: 32px;
+    background-image: url('./images/bg.jpg');
+}
+.bottom{
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#progress
+{
+    width: 80vw;
+}
+.icons {
+    display: flex;
+    padding-top:15px ;
+
+}
+.icons img{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.songlist{
+    width: 25%;
+}
+.songcontainer{
+    padding-top: 30px;
+}
+.songItem{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    background-color:white;
+    margin: 15px 0;
+    align-items: center;
+
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 38px;
+
+}
+.songItem .coverimg{
+    height: 40px;
+    border-radius: 38px;
+
+}
+.playsvg img{
+    height: 25px;
+    cursor: pointer;
+
+}
+.songinfo{
+    color: white;
+    position: absolute;
+    left: 10vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+   html body{
+        width: 100vw;
+    }
+
+    .brand{
+        font-size: 1.7rem;
+    }
+    .brand img{
+        height: 40px;
+        width: 40px;
+
+    }
+    .navigation{
+        font-size: 25px;
+    }
+    .container{
+        min-height: 65vh;
+        background-position: center center;
+        background-position: 860px 1660px;
+    }
+    .bottom{
+        height: 100px;
+        bottom: -10px;
+    }
+
+    .songlist{
+     
+        width: 52vw;
+    }
+    .songcontainer{
+        padding-top: 5px;
+        padding-left: 0;
+        
+    }
+    .songinfo{
+        left: 11vw;
+        bottom: 6.5vh;
+    }
+
+
+  }
